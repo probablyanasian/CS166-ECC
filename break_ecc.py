@@ -13,7 +13,7 @@ print("\nCracking Q")
 __time__ = cputime(); __wall__ = walltime(); dl = discrete_log(Q, G, G.order(), operation='+'); print("Time: CPU {:.2f} s, Wall: {:.2f} s".format(cputime(__time__), walltime(__wall__)))
 print(f"Found Private Key: {dl}")
 
-print(f"Verifying with key*generator point: {dl*G}")
+print(f"Verifying with key*generator point: {dl*G=}")
 assert dl*G == Q
-print(f"Assertion Success")
+print(f"Assertion Successful: Private Key Found")
 
