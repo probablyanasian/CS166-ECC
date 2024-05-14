@@ -3,7 +3,7 @@
 import math
 import secrets
 
-bits = 64  # abuse global
+bits = 96  # abuse global
 message = "A faster GPU can process more frames per second."
 e = 7
 
@@ -89,5 +89,5 @@ for m in split_message:
     print(f"Encrypted Message: {encrypted}")
     decrypted = pow(encrypted, d, n)
     print(f"Decrypted Message: {decrypted}")
-    unencoded = decrypted.to_bytes(length=split_len).decode("ascii")
+    unencoded = decrypted.to_bytes(length=split_len, byteorder="big").decode("ascii")
     print(f"Unencoded Message: {unencoded}")

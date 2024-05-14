@@ -7,6 +7,6 @@ print("\nCracking Q")
 time dl = discrete_log(Q, G, G.order(), operation='+')
 print(f"Found Private Key: {dl}")
 
-print(f"Verifying with key*generator point: {dl*G}")
+print(f"Verifying with key*generator point: {dl*G=}")
 assert dl*G == Q
-print(f"Assertion Success")
+print(f"Assertion Successful: Private Key Found")
