@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import math
 import secrets
 
@@ -78,7 +80,7 @@ n_bits = int(math.log(n, 2))
 print(f"n is {n_bits} bits long")
 split_len = n_bits // 8  # split into chunks less than n has bits, 8 bit ascii
 split_message = [
-    int.from_bytes(bytes(message[i : i + split_len], encoding="ascii"))
+    int.from_bytes(bytes(message[i : i + split_len], encoding="ascii"), byteorder="big")
     for i in range(0, len(message), split_len)
 ]
 
