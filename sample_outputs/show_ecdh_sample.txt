@@ -1,0 +1,17 @@
+Generating 32-bit curve
+Modulus: 3038931943
+a:       1221575917
+b:       2494079499
+order:   3038897731
+G:      (1146269208,2197503771)
+Q:      (1894875737,3002870491)
+
+A's Private Key: A=20885631
+A's Public Key A*G: A_pub=(31103807 : 1911364598 : 1)
+
+B's Private Key: B=1158964331
+B's Public Key B*G: B_pub=(143301455 : 2951941721 : 1)
+
+Shared key A_priv*B_pub: A*B_pub=(2337928432 : 2343893116 : 1)
+Shared key B_priv*A_pub: B*A_pub=(2337928432 : 2343893116 : 1)
+Assertion Successful: Shared Key Matches

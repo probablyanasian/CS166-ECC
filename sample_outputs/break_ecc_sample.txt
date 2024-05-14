@@ -1,0 +1,13 @@
+Generating 32-bit curve
+Modulus: 3899998981
+a:       1143901932
+b:       3138441477
+order:   3899916247
+G:      (2107209913,1938853378)
+Q:      (3025205854,1171194247)
+
+Cracking Q
+Time: CPU 2.70 s, Wall: 2.70 s
+Found Private Key: 15427862
+Verifying with key*generator point: dl*G=(3025205854 : 1171194247 : 1)
+Assertion Successful: Private Key Found

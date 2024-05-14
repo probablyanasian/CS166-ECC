@@ -59,8 +59,8 @@ def mult_inverse(e, n):
 
 
 while True:
-    p = gen_probable_prime()  # 7
-    q = gen_probable_prime()  # 11
+    p = gen_probable_prime()
+    q = gen_probable_prime()
 
     n = p * q
 
@@ -72,7 +72,7 @@ while True:
 
     print("Uninvertable, Retrying")
 
-print(f"Generating a {bits} bit RSA keypair")
+print(f"Generating an up to {bits*2} bit RSA keypair using two {bits} bit primes")
 print(f"Secrets: {d=}, {p=}, {q=}")
 print(f"{n=}, {e=}")
 
