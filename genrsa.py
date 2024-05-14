@@ -76,7 +76,7 @@ print(f"{n=}, {e=}")
 
 n_bits = int(math.log(n, 2))
 print(f"n is {n_bits} bits long")
-split_len = n_bits // 8  # split into chunks probabilistically less than n, 8 bit ascii
+split_len = n_bits // 8  # split into chunks less than n has bits, 8 bit ascii
 split_message = [
     int.from_bytes(bytes(message[i : i + split_len], encoding="ascii"))
     for i in range(0, len(message), split_len)
